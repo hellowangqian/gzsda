@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -c 2
+#SBATCH --gres=gpu:1
+#SBATCH -p res-gpu-small
+#SBATCH --qos short
+#SBATCH --job-name=zsda
+#SBATCH --mem=14g
+#SBATCH -t 48:00:00
+#SBATCH -o xray10--%j.log
+source /etc/profile
+module load cuda/8.0-cudnn6
+
+## Put the path to your folder
+
+#### Your code below this
+for SOURCE in 0 1
+do
+    for TARGET in 0 1
+    do
+        for TRIAL in 0 1 2 3 4
+        do
+            if [ "$TARGET" != "$SOURCE" ]
+            then
+                echo $SOURCE $TARGET $TRIAL
+                python3 -W ignore train_vae2_xray.py --sourceDomainIndex $SOURCE --targetDomainIndex $TARGET --trialIndex $TRIAL --epochs 50
+            fi
+        done
+    done
+done
+
