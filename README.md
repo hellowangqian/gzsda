@@ -7,8 +7,8 @@ All data used in our work are publicly available. \
 Image features for OfficeHome, Office31 and BaggageXray20 are available from Baidu yun: \
 link：https://pan.baidu.com/s/1ldG6eirNNOZtyaRAYz2u5g?pwd=nf4i \
 code：nf4i\
-If the raw images are needed, one can download them from Baidu yun:\
-link：https://pan.baidu.com/s/1voEObYqFjxaHqb5HrpeQYQ?pwd=0zdf \
+If the raw images are needed, one can download them from https://collections.durham.ac.uk/files/r1c534fn98x \
+or Baidu yun：https://pan.baidu.com/s/1voEObYqFjxaHqb5HrpeQYQ?pwd=0zdf \
 code：0zdf
 
 ## How to run
