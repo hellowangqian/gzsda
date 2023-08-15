@@ -11,6 +11,7 @@ If the raw images are needed, one can download them from https://collections.dur
 or Baidu yun：https://pan.baidu.com/s/1voEObYqFjxaHqb5HrpeQYQ?pwd=0zdf \
 code：0zdf
 
+For those who cannot access baidu yun, please try Dropbox: https://www.dropbox.com/sh/293h2sij1oirn3y/AAD_J8ZReGHglzw84RSs6sb8a?dl=0
 ## How to run
 One can run the command in run_xray.sh for the basic experiments on the BaggageXray20 dataset.
 
